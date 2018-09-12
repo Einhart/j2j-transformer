@@ -1,0 +1,129 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "MAIN": {
+        "ACQD-MRCH-NBR": "externalId",
+        "STAT-RSN-CDE": "status.statRsnCde",
+        "STATUS-CODE": "status.open",
+        "MCC-CDE": "mcc",
+        "FED-TAX-ID": "temp.FED-TAX-ID",
+        "CAN-BUS-NBR": "temp.CAN-BUS-NBR",
+        "SSN-NBR": "temp.SSN-NBR",
+        "CRTE-UID": "recordControl.crteBy",
+        "CRTE-TMS": "recordControl.crteTms",
+        "UPD-UID": "recordControl.lstModBy",
+        "UPD-TMS": "recordControl.lstupdTms",
+        "MRCH-TYP": "mrchTyp",
+        "ACQ-ALT-ID": "acqRef",
+        "ISO-ALT-ID": "isoMrchRef",
+        "PROC-ALT-ID": "acqProcRef",
+        "BUS-TYPE-CDE": "busTyp",
+        "STAT-DATE": "statChngDt",
+        "OPEN-DATE": "rltnOpenDt",
+        "CLOSE-DATE": "rltnClseDt",
+        "REG-DT": "regDt",
+        "STUB-DATE": "stbDt",
+        "MRCH-AVG-TCKT-AMT": "avgTcktVal",
+        "TRMNL-DWNLD-CDE": "trmnlDwnIdCde",
+        "ACQ-INT-REF-NBR": "acqIntlRefNbr",
+        "BRD-PROF-UPD-DT": "brdProfUpdDt",
+        "CORP-SET-ID": "corpSetId",
+        "PGM-QUAL-CDE": "rmoPrc.pqc",
+        "INTGR-FEE-RTRN": "rmoPrc.intgrRetnRtrnInd",
+        "MRCH-PRCG-REQUAL-TYP-CDE": "rmoPrc.requalProfTypInd",
+        "PHONE-NBR": "contactDetails[].teleAddress[].teleNbr"
+      },
+      "ADD": {
+        "*": {
+          "ADDR-CLSS-CDE": {
+            "DBA": {
+              "@(2,FIRM-NM)": "dbaNm",
+              "@(2,ADDR1)": "contactDetails.[0].postalAddress.postalAddressLine1",
+              "@(2,ADDR2)": "contactDetails.[0].postalAddress.postalAddressLine2",
+              "@(2,ADDR3)": "contactDetails.[0].postalAddress.postalAddressLine3",
+              "@(2,CITY)": "contactDetails.[0].postalAddress.city",
+              "@(2,STATE)": "contactDetails.[0].postalAddress.state",
+              "@(2,COUNTRY)": "contactDetails.[0].postalAddress.country",
+              "@(2,ZIP)": "contactDetails.[0].postalAddress.postalCode",
+              "@(2,ZIP4)": "contactDetails.[0].postalAddress.pstlPlsFourCde",
+              "@(2,ADDR-CLSS-CDE)": "contactDetails.[0].contactType"
+            },
+            "COR": {
+              "@(2,FIRST-NM)": "busCntcts.[0].name.fstNm",
+              "@(2,LAST-NM)": "busCntcts.[0].name.lstNm",
+              "@(2,ADDR1)": "busCntcts.[0].address.postalAddress.postalAddressLine1",
+              "@(2,ADDR2)": "busCntcts.[0].address.postalAddress.postalAddressLine2",
+              "@(2,ADDR3)": "busCntcts.[0].address.postalAddress.postalAddressLine3",
+              "@(2,CITY)": "busCntcts.[0].address.postalAddress.city",
+              "@(2,STATE)": "busCntcts.[0].address.postalAddress.state",
+              "@(2,COUNTRY)": "busCntcts.[0].address.postalAddress.country",
+              "@(2,ZIP)": "busCntcts.[0].address.postalAddress.postalCode",
+              "@(2,ZIP4)": "busCntcts.[0].address.postalAddress.pstlPlsFourCde",
+              "@(2,ADDR-CLSS-CDE)": "busCntcts.[0].busContactType"
+            },
+            "PRI": {
+              "@(2,FIRST-NM)": "busCntcts.[1].name.fstNm",
+              "@(2,LAST-NM)": "busCntcts.[1].name.lstNm",
+              "@(2,ADDR1)": "busCntcts.[1].address.postalAddress.postalAddressLine1",
+              "@(2,ADDR2)": "busCntcts.[1].address.postalAddress.postalAddressLine2",
+              "@(2,ADDR3)": "busCntcts.[1].address.postalAddress.postalAddressLine3",
+              "@(2,CITY)": "busCntcts.[1].address.postalAddress.city",
+              "@(2,STATE)": "busCntcts.[1].address.postalAddress.state",
+              "@(2,COUNTRY)": "busCntcts.[1].address.postalAddress.country",
+              "@(2,ZIP)": "busCntcts.[1].address.postalAddress.postalCode",
+              "@(2,ZIP4)": "busCntcts.[1].address.postalAddress.pstlPlsFourCde",
+              "@(2,ADDR-CLSS-CDE)": "busCntcts.[1].busContactType"
+            },
+            "RA1": {
+              "@(2,FIRST-NM)": "busCntcts.[2].name.fstNm",
+              "@(2,LAST-NM)": "busCntcts.[2].name.lstNm",
+              "@(2,ADDR1)": "busCntcts.[2].address.postalAddress.postalAddressLine1",
+              "@(2,ADDR2)": "busCntcts.[2].address.postalAddress.postalAddressLine2",
+              "@(2,ADDR3)": "busCntcts.[2].address.postalAddress.postalAddressLine3",
+              "@(2,CITY)": "busCntcts.[2].address.postalAddress.city",
+              "@(2,STATE)": "busCntcts.[2].address.postalAddress.state",
+              "@(2,COUNTRY)": "busCntcts.[2].address.postalAddress.country",
+              "@(2,ZIP)": "busCntcts.[2].address.postalAddress.postalCode",
+              "@(2,ZIP4)": "busCntcts.[2].address.postalAddress.pstlPlsFourCde",
+              "@(2,ADDR-CLSS-CDE)": "busCntcts.[2].busContactType"
+            },
+            "SHI": {
+              "@(2,FIRST-NM)": "busCntcts.[3].name.fstNm",
+              "@(2,LAST-NM)": "busCntcts.[3].name.lstNm",
+              "@(2,ADDR1)": "busCntcts.[3].address.postalAddress.postalAddressLine1",
+              "@(2,ADDR2)": "busCntcts.[3].address.postalAddress.postalAddressLine2",
+              "@(2,ADDR3)": "busCntcts.[3].address.postalAddress.postalAddressLine3",
+              "@(2,CITY)": "busCntcts.[3].address.postalAddress.city",
+              "@(2,STATE)": "busCntcts.[3].address.postalAddress.state",
+              "@(2,COUNTRY)": "busCntcts.[3].address.postalAddress.country",
+              "@(2,ZIP)": "busCntcts.[3].address.postalAddress.postalCode",
+              "@(2,ZIP4)": "busCntcts.[3].address.postalAddress.pstlPlsFourCde",
+              "@(2,ADDR-CLSS-CDE)": "busCntcts.[3].busContactType"
+            }
+          }
+        }
+      },
+      "OTHER": {
+        "*": {
+          "COD": "products[&1].productRef"
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "*": "&",
+      "temp": {
+        "*": {
+          "$": "taxInfo[#2].taxId",
+          "@": "taxInfo[#2].idIss"
+        }
+      }
+    }
+  },
+  {
+    "operation": "net.knightech.json.jolt.transformer.ProductLookupTransform"
+  }
+]

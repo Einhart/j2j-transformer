@@ -1,0 +1,47 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.3.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'application'
+
+jar {
+    baseName = 'json-to-json-transformer'
+    version = '0.1.0'
+}
+
+
+mainClassName = 'net.knightech.json.jolt.transformer.Application'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-batch")
+    //compile group: 'org.springframework', name: 'spring-core', version: '5.0.8.RELEASE'
+
+
+    compile group: 'com.bazaarvoice.jolt', name: 'jolt-core', version: '0.1.0'
+    compile group: 'com.bazaarvoice.jolt', name: 'json-utils', version: '0.1.0'
+    compile group: 'com.google.guava', name: 'guava', version: '21.0'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
+    compile group: 'org.json', name: 'json', version: '20160810'
+    compile group: 'com.github.fge', name: 'json-schema-validator', version: '2.2.6'
+    compile group: 'commons-validator', name: 'commons-validator', version: '1.6'
+
+    testCompile("junit:junit")
+}
+

@@ -1,0 +1,204 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "MAIN": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ACQD-MRCH-NBR": {
+          "type": "string"
+        },
+        "MRCH-TYP": {
+          "type": "string"
+        },
+        "MCC-CDE": {
+          "type": "string"
+        },
+        "ACQ-ALT-ID": {
+          "type": "string"
+        },
+        "PROC-ALT-ID": {
+          "type": "string"
+        },
+        "ISO-ALT-ID": {
+          "type": "string"
+        },
+        "BUS-TYPE-CDE": {
+          "type": "string"
+        },
+        "STATUS-CODE": {
+          "type": "string"
+        },
+        "STAT-DATE": {
+          "type": "string"
+        },
+        "OPEN-DATE": {
+          "type": "string"
+        },
+        "CLOSE-DATE": {
+          "type": "string"
+        },
+        "STUB-DATE": {
+          "type": "string"
+        },
+        "REG-DT": {
+          "type": "string"
+        },
+        "STAT-RSN-CDE": {
+          "type": "string"
+        },
+        "HQ-NBR": {
+          "type": "string"
+        },
+        "AREA-CODE": {
+          "type": "string"
+        },
+        "PHONE-NBR": {
+          "type": "string"
+        },
+        "BRD-PROF-UPD-DT": {
+          "type": "string"
+        },
+        "TRMNL-DWNLD-CDE": {
+          "type": "string"
+        },
+        "CORP-SET-ID": {
+          "type": "string"
+        },
+        "ACQ-INT-REF-NBR": {
+          "type": "string"
+        },
+        "PGM-QUAL-CDE": {
+          "type": "string"
+        },
+        "INTGR-FEE-RTRN": {
+          "type": "string"
+        },
+        "MRCH-PRCG-REQUAL-TYP-CDE": {
+          "type": "string"
+        },
+        "ARIBA-ENRICH-SUPL-CDE": {
+          "type": "string"
+        },
+        "FED-TAX-ID": {
+          "type": "string"
+        },
+        "SSN-NBR": {
+          "type": "string"
+        },
+        "CAN-BUS-NBR": {
+          "type": "string"
+        },
+        "MRCH-AVG-TCKT-AMT": {
+          "type": "string"
+        },
+        "CRTE-UID": {
+          "type": "string"
+        },
+        "CRTE-TMS": {
+          "type": "string"
+        },
+        "UPD-UID": {
+          "type": "string"
+        },
+        "UPD-TMS": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "ACQD-MRCH-NBR",
+        "MCC-CDE",
+        "ACQ-ALT-ID"
+      ]
+    },
+    "ADD": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "ADDR-CLSS-CDE": {
+            "type": "string"
+          },
+          "FIRM-NM": {
+            "type": "string"
+          },
+          "ADDR1": {
+            "type": "string"
+          },
+          "ADDR2": {
+            "type": "string"
+          },
+          "CITY": {
+            "type": "string"
+          },
+          "STATE": {
+            "type": "string"
+          },
+          "COUNTRY": {
+            "type": "string"
+          },
+          "ZIP": {
+            "type": "string"
+          },
+          "ZIP+4": {
+            "type": "string"
+          },
+          "FIRST-NM": {
+            "type": "string"
+          },
+          "LAST-NM": {
+            "type": "string"
+          },
+          "TITLE": {
+            "type": "string"
+          },
+          "CRTE-UID": {
+            "type": "string"
+          },
+          "CRTE-TMS": {
+            "type": "string"
+          },
+          "UPD-UID": {
+            "type": "string"
+          },
+          "UPD-TMS": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "OTHER": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "COD": {
+            "type": "string"
+          },
+          "EFF-DT": {
+            "type": "string"
+          },
+          "EXP-DT": {
+            "type": "string"
+          },
+          "CRTE-UID": {
+            "type": "string"
+          },
+          "CRTE-TMS": {
+            "type": "string"
+          },
+          "UPD-UID": {
+            "type": "string"
+          },
+          "UPD-TMS": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

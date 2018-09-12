@@ -1,0 +1,223 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "properties": {
+    "externalId": {
+      "type": "string"
+    },
+    "status": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "statRsnCde": {
+          "type": "string"
+        },
+        "open": {
+          "type": "string"
+        }
+      }
+    },
+    "mcc": {
+      "type": "string"
+    },
+    "taxInfo": {
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "taxId": {
+            "type": "string"
+          },
+          "idIss": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "recordControl": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "crteBy": {
+          "type": "string"
+        },
+        "crteTms": {
+          "type": "string"
+        },
+        "lstModBy": {
+          "type": "string"
+        },
+        "lstupdTms": {
+          "type": "string"
+        }
+      }
+    },
+    "mrchTyp": {
+      "type": "string"
+    },
+    "acqRef": {
+      "type": "string"
+    },
+    "isoMrchRef": {
+      "type": "string"
+    },
+    "acqProcRef": {
+      "type": "string"
+    },
+    "busTyp": {
+      "type": "string"
+    },
+    "statChngDt": {
+      "type": "string"
+    },
+    "rltnOpenDt": {
+      "type": "string"
+    },
+    "rltnClseDt": {
+      "type": "string"
+    },
+    "regDt": {
+      "type": "string"
+    },
+    "stbDt": {
+      "type": "string"
+    },
+    "avgTcktVal": {
+      "type": "string"
+    },
+    "trmnlDwnIdCde": {
+      "type": "string"
+    },
+    "brdProfUpdDt": {
+      "type": "string"
+    },
+    "contactDetails": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "teleAddress": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "teleNbr": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "postalAddress": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "postalAddressLine1": {
+                "type": "string"
+              },
+              "postalAddressLine2": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "state": {
+                "type": "string"
+              },
+              "country": {
+                "type": "string"
+              },
+              "postalCode": {
+                "type": "string"
+              }
+            }
+          },
+          "contactType": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "busCntcts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "fstNm": {
+                "type": "string"
+              },
+              "lstNm": {
+                "type": "string"
+              }
+            }
+          },
+          "address": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "postalAddress": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "postalAddressLine1": {
+                    "type": "string"
+                  },
+                  "postalAddressLine2": {
+                    "type": "string"
+                  },
+                  "city": {
+                    "type": "string"
+                  },
+                  "state": {
+                    "type": "string"
+                  },
+                  "country": {
+                    "type": "string"
+                  },
+                  "postalCode": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "busContactType": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "dbaNm": {
+      "type": "string"
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "productRef": {
+            "type": "string"
+          },
+          "productName": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "externalId",
+    "mcc",
+    "acqRef"
+  ]
+}

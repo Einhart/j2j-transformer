@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties("operationalActivity")
-public class OperationalActivityCodeLookupProperties {
+@ConfigurationProperties("lookup")
+public class LookupProperties {
 
 	private final Map<String, Object> codes = new HashMap<>();
 

@@ -3,10 +3,10 @@
     "operation": "shift",
     "spec": {
       "MAIN": {
-        "ACQD-MRCH-NBR": "externalId",
+        "ID": "myId",
         "STAT-RSN-CDE": "status.statRsnCde",
         "STATUS-CODE": "status.open",
-        "MCC-CDE": "mcc",
+        "CD": "brb",
         "FED-TAX-ID": "temp.FED-TAX-ID",
         "CAN-BUS-NBR": "temp.CAN-BUS-NBR",
         "SSN-NBR": "temp.SSN-NBR",
@@ -14,21 +14,21 @@
         "CRTE-TMS": "recordControl.crteTms",
         "UPD-UID": "recordControl.lstModBy",
         "UPD-TMS": "recordControl.lstupdTms",
-        "MRCH-TYP": "mrchTyp",
-        "ACQ-ALT-ID": "acqRef",
-        "ISO-ALT-ID": "isoMrchRef",
-        "PROC-ALT-ID": "acqProcRef",
-        "BUS-TYPE-CDE": "busTyp",
+        "TP": "mrchTyp",
+        "AID": "acqRef",
+        "IPID": "isoMrchRef",
+        "PID": "acqProcRef",
+        "BCD": "busTyp",
         "STAT-DATE": "statChngDt",
         "OPEN-DATE": "rltnOpenDt",
         "CLOSE-DATE": "rltnClseDt",
-        "REG-DT": "regDt",
+        "RDT": "regDt",
         "STUB-DATE": "stbDt",
-        "MRCH-AVG-TCKT-AMT": "avgTcktVal",
-        "TRMNL-DWNLD-CDE": "trmnlDwnIdCde",
+        "MOB": "avgTcktVal",
+        "TD": "trmnlDwnIdCde",
         "ACQ-INT-REF-NBR": "acqIntlRefNbr",
         "BRD-PROF-UPD-DT": "brdProfUpdDt",
-        "CORP-SET-ID": "corpSetId",
+        "ONEP-SET-ID": "corpSetId",
         "PGM-QUAL-CDE": "rmoPrc.pqc",
         "INTGR-FEE-RTRN": "rmoPrc.intgrRetnRtrnInd",
         "MRCH-PRCG-REQUAL-TYP-CDE": "rmoPrc.requalProfTypInd",
@@ -36,9 +36,9 @@
       },
       "ADD": {
         "*": {
-          "ADDR-CLSS-CDE": {
-            "DBA": {
-              "@(2,FIRM-NM)": "dbaNm",
+          "ACDE": {
+            "TWO": {
+              "@(2,CONM)": "dbaNm",
               "@(2,ADDR1)": "contactDetails.[0].postalAddress.postalAddressLine1",
               "@(2,ADDR2)": "contactDetails.[0].postalAddress.postalAddressLine2",
               "@(2,ADDR3)": "contactDetails.[0].postalAddress.postalAddressLine3",
@@ -47,9 +47,9 @@
               "@(2,COUNTRY)": "contactDetails.[0].postalAddress.country",
               "@(2,ZIP)": "contactDetails.[0].postalAddress.postalCode",
               "@(2,ZIP4)": "contactDetails.[0].postalAddress.pstlPlsFourCde",
-              "@(2,ADDR-CLSS-CDE)": "contactDetails.[0].contactType"
+              "@(2,ACDE)": "contactDetails.[0].contactType"
             },
-            "COR": {
+            "ONE": {
               "@(2,FIRST-NM)": "busCntcts.[0].name.fstNm",
               "@(2,LAST-NM)": "busCntcts.[0].name.lstNm",
               "@(2,ADDR1)": "busCntcts.[0].address.postalAddress.postalAddressLine1",
@@ -60,9 +60,9 @@
               "@(2,COUNTRY)": "busCntcts.[0].address.postalAddress.country",
               "@(2,ZIP)": "busCntcts.[0].address.postalAddress.postalCode",
               "@(2,ZIP4)": "busCntcts.[0].address.postalAddress.pstlPlsFourCde",
-              "@(2,ADDR-CLSS-CDE)": "busCntcts.[0].busContactType"
+              "@(2,ACDE)": "busCntcts.[0].busContactType"
             },
-            "PRI": {
+            "THREE": {
               "@(2,FIRST-NM)": "busCntcts.[1].name.fstNm",
               "@(2,LAST-NM)": "busCntcts.[1].name.lstNm",
               "@(2,ADDR1)": "busCntcts.[1].address.postalAddress.postalAddressLine1",
@@ -73,9 +73,9 @@
               "@(2,COUNTRY)": "busCntcts.[1].address.postalAddress.country",
               "@(2,ZIP)": "busCntcts.[1].address.postalAddress.postalCode",
               "@(2,ZIP4)": "busCntcts.[1].address.postalAddress.pstlPlsFourCde",
-              "@(2,ADDR-CLSS-CDE)": "busCntcts.[1].busContactType"
+              "@(2,ACDE)": "busCntcts.[1].busContactType"
             },
-            "RA1": {
+            "FOUR": {
               "@(2,FIRST-NM)": "busCntcts.[2].name.fstNm",
               "@(2,LAST-NM)": "busCntcts.[2].name.lstNm",
               "@(2,ADDR1)": "busCntcts.[2].address.postalAddress.postalAddressLine1",
@@ -86,9 +86,9 @@
               "@(2,COUNTRY)": "busCntcts.[2].address.postalAddress.country",
               "@(2,ZIP)": "busCntcts.[2].address.postalAddress.postalCode",
               "@(2,ZIP4)": "busCntcts.[2].address.postalAddress.pstlPlsFourCde",
-              "@(2,ADDR-CLSS-CDE)": "busCntcts.[2].busContactType"
+              "@(2,ACDE)": "busCntcts.[2].busContactType"
             },
-            "SHI": {
+            "FIVE": {
               "@(2,FIRST-NM)": "busCntcts.[3].name.fstNm",
               "@(2,LAST-NM)": "busCntcts.[3].name.lstNm",
               "@(2,ADDR1)": "busCntcts.[3].address.postalAddress.postalAddressLine1",
@@ -99,7 +99,7 @@
               "@(2,COUNTRY)": "busCntcts.[3].address.postalAddress.country",
               "@(2,ZIP)": "busCntcts.[3].address.postalAddress.postalCode",
               "@(2,ZIP4)": "busCntcts.[3].address.postalAddress.pstlPlsFourCde",
-              "@(2,ADDR-CLSS-CDE)": "busCntcts.[3].busContactType"
+              "@(2,ACDE)": "busCntcts.[3].busContactType"
             }
           }
         }
@@ -124,6 +124,6 @@
     }
   },
   {
-    "operation": "net.knightech.json.jolt.transformer.ProductLookupTransform"
+    "operation": "net.knightech.json.jolt.transformer.LookupTransform"
   }
 ]

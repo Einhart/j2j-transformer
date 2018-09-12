@@ -30,11 +30,6 @@ import com.bazaarvoice.jolt.JsonUtils;
 @EnableBatchProcessing
 public class BatchConfiguration {
 
-	public static final String OPEN_SQUARE_BRACKET_INDICATOR = "Ý";
-	public static final String OPEN_SQUARE_BRACKET = "[";
-	public static final String CLOSED_SQUARE_BRACKET_INDICATOR = "¨";
-	public static final String CLOSED_SQUARE_BRACKET = "]";
-
 	@Autowired
 	public JobBuilderFactory jobBuilderFactory;
 
@@ -52,14 +47,7 @@ public class BatchConfiguration {
 	private Resource input;
 
 	private static Object mapLine(String line, int lineNumber) {
-		return jsonToObject(getCollect(line), Charset.forName("ISO-8859-1").toString());
-	}
-
-	private static String getCollect(String line) {
-		return Stream.of(line)
-			.map(s -> s.replace(OPEN_SQUARE_BRACKET_INDICATOR, OPEN_SQUARE_BRACKET))
-			.map(s -> s.replace(CLOSED_SQUARE_BRACKET_INDICATOR, CLOSED_SQUARE_BRACKET))
-			.collect(Collectors.joining());
+		return jsonToObject(line, Charset.forName("ISO-8859-1").toString());
 	}
 
 	@Bean

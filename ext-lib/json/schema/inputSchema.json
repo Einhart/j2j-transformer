@@ -7,25 +7,25 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "ACQD-MRCH-NBR": {
+        "ID": {
           "type": "string"
         },
-        "MRCH-TYP": {
+        "TP": {
           "type": "string"
         },
-        "MCC-CDE": {
+        "CD": {
           "type": "string"
         },
-        "ACQ-ALT-ID": {
+        "AID": {
           "type": "string"
         },
-        "PROC-ALT-ID": {
+        "PID": {
           "type": "string"
         },
-        "ISO-ALT-ID": {
+        "IPID": {
           "type": "string"
         },
-        "BUS-TYPE-CDE": {
+        "BCD": {
           "type": "string"
         },
         "STATUS-CODE": {
@@ -43,7 +43,7 @@
         "STUB-DATE": {
           "type": "string"
         },
-        "REG-DT": {
+        "RDT": {
           "type": "string"
         },
         "STAT-RSN-CDE": {
@@ -61,10 +61,10 @@
         "BRD-PROF-UPD-DT": {
           "type": "string"
         },
-        "TRMNL-DWNLD-CDE": {
+        "TD": {
           "type": "string"
         },
-        "CORP-SET-ID": {
+        "ONEP-SET-ID": {
           "type": "string"
         },
         "ACQ-INT-REF-NBR": {
@@ -91,7 +91,7 @@
         "CAN-BUS-NBR": {
           "type": "string"
         },
-        "MRCH-AVG-TCKT-AMT": {
+        "MOB": {
           "type": "string"
         },
         "CRTE-UID": {
@@ -108,9 +108,9 @@
         }
       },
       "required": [
-        "ACQD-MRCH-NBR",
-        "MCC-CDE",
-        "ACQ-ALT-ID"
+        "ID",
+        "CD",
+        "AID"
       ]
     },
     "ADD": {
@@ -119,10 +119,10 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "ADDR-CLSS-CDE": {
+          "ACDE": {
             "type": "string"
           },
-          "FIRM-NM": {
+          "CONM": {
             "type": "string"
           },
           "ADDR1": {
@@ -179,10 +179,10 @@
           "COD": {
             "type": "string"
           },
-          "EFF-DT": {
+          "ED": {
             "type": "string"
           },
-          "EXP-DT": {
+          "XD": {
             "type": "string"
           },
           "CRTE-UID": {

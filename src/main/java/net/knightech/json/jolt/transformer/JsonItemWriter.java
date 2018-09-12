@@ -6,12 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.batch.item.ItemWriter;
 
-/**
- * This class writes out the response to the console 
- * @deprecated  this helper method is now replaced by writer configured within the {@link BatchConfiguration)
- * @author pknigh2
- *
- */
 @Deprecated 
 public class JsonItemWriter implements ItemWriter<Object> {
 

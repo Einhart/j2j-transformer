@@ -20,18 +20,13 @@ import com.github.fge.jsonschema.core.report.ProcessingReport;
 import com.github.fge.jsonschema.main.JsonSchema;
 import com.github.fge.jsonschema.main.JsonSchemaFactory;
 
-/**
- * This class performs the transformation of the input json to the spec held in the Jolt Chainr processor.
- *
- * @author pknigh2
- */
 public class JsonItemProcessor implements ItemProcessor<Object, String> {
 
   @Autowired
   private Chainr transformSpecification;
 
   @Autowired
-  OperationalActivityCodeLookupProperties operationalActivityCodeLookupProperties;
+  LookupProperties lookupCodeLookupProperties;
 
   @Value("file:./ext-lib/json/output/output.txt")
   private Resource output;
@@ -56,7 +51,7 @@ public class JsonItemProcessor implements ItemProcessor<Object, String> {
   inboundSkema = getJsonSchema(inputSchema);
   outboundSkema = getJsonSchema(outputSchema);    
   context = new HashMap<>();
-   context.put("activityCodes", operationalActivityCodeLookupProperties.getCodes());
+   context.put("activityCodes", lookupCodeLookupProperties.getCodes());
 }
   
   @Override

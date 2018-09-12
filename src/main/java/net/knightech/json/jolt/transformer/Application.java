@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
-@EnableConfigurationProperties(OperationalActivityCodeLookupProperties.class)
+@EnableConfigurationProperties(LookupProperties.class)
 public class Application {
 
     public static void main(String[] args) throws Exception {

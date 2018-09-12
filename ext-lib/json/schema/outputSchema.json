@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "additionalProperties": false,
   "properties": {
-    "externalId": {
+    "myId": {
       "type": "string"
     },
     "status": {
@@ -18,7 +18,7 @@
         }
       }
     },
-    "mcc": {
+    "brb": {
       "type": "string"
     },
     "taxInfo": {
@@ -216,8 +216,8 @@
     }
   },
   "required": [
-    "externalId",
-    "mcc",
+    "myId",
+    "brb",
     "acqRef"
   ]
 }

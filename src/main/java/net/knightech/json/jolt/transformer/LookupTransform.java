@@ -6,20 +6,14 @@ import java.util.Map;
 import javax.inject.Inject;
 import com.bazaarvoice.jolt.ContextualTransform;
 
-/**
- * Copyright (c)2018 DFS Services LLC
- * All rights reserved.
- *
- * @author pknigh2
- */
-public class ProductLookupTransform implements ContextualTransform {
+public class LookupTransform implements ContextualTransform {
 
   public static final String CONTEXT_KEY = "activityCodes";
   public static final String CRTE_TMS = "crteTms";
   public static final String LSTUPD_TMS = "lstupdTms";
 
   @Inject
-  public ProductLookupTransform( ) {
+  public LookupTransform( ) {
     
   }
 

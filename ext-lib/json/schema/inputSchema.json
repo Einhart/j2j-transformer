@@ -49,7 +49,7 @@
         "STAT-RSN-CDE": {
           "type": "string"
         },
-        "HQ-NBR": {
+        "QNB": {
           "type": "string"
         },
         "AREA-CODE": {
@@ -58,7 +58,7 @@
         "PHONE-NBR": {
           "type": "string"
         },
-        "BRD-PROF-UPD-DT": {
+        "BUDT": {
           "type": "string"
         },
         "TD": {
@@ -67,25 +67,25 @@
         "ONEP-SET-ID": {
           "type": "string"
         },
-        "ACQ-INT-REF-NBR": {
+        "NNBR": {
           "type": "string"
         },
-        "PGM-QUAL-CDE": {
+        "Q-DE": {
           "type": "string"
         },
-        "INTGR-FEE-RTRN": {
+        "IFR": {
           "type": "string"
         },
-        "MRCH-PRCG-REQUAL-TYP-CDE": {
+        "RQTDC": {
           "type": "string"
         },
         "ARIBA-ENRICH-SUPL-CDE": {
           "type": "string"
         },
-        "FED-TAX-ID": {
+        "TID": {
           "type": "string"
         },
-        "SSN-NBR": {
+        "SIN": {
           "type": "string"
         },
         "CAN-BUS-NBR": {

@@ -24,13 +24,13 @@ public class LookupTransform implements ContextualTransform {
 
     final LinkedHashMap hydratedTransformedJson = (LinkedHashMap) input;
     
-    LinkedHashMap recordControl =  (LinkedHashMap) hydratedTransformedJson.get("recordControl");
+    LinkedHashMap rdct =  (LinkedHashMap) hydratedTransformedJson.get("rdct");
 
-    final String createdTimeStampAsStringEST= (String) recordControl.get(CRTE_TMS);
-    final String lastUpdatedTimeStampAsStringEST = (String) recordControl.get(LSTUPD_TMS);
+    final String createdTimeStampAsStringEST= (String) rdct.get(CRTE_TMS);
+    final String lastUpdatedTimeStampAsStringEST = (String) rdct.get(LSTUPD_TMS);
 
-    recordControl.put(CRTE_TMS, convertToZonedTimestamp(createdTimeStampAsStringEST));
-    recordControl.put(LSTUPD_TMS, convertToZonedTimestamp(lastUpdatedTimeStampAsStringEST));
+    rdct.put(CRTE_TMS, convertToZonedTimestamp(createdTimeStampAsStringEST));
+    rdct.put(LSTUPD_TMS, convertToZonedTimestamp(lastUpdatedTimeStampAsStringEST));
     
     List<LinkedHashMap> products =  (List<LinkedHashMap>) hydratedTransformedJson.get("products");
     

@@ -10,7 +10,7 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "statRsnCde": {
+        "rsn": {
           "type": "string"
         },
         "open": {
@@ -21,23 +21,23 @@
     "brb": {
       "type": "string"
     },
-    "taxInfo": {
+    "txdetail": {
       "type": "array",
       "additionalItems": false,
       "items": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "taxId": {
+          "txId": {
             "type": "string"
           },
-          "idIss": {
+          "idFr": {
             "type": "string"
           }
         }
       }
     },
-    "recordControl": {
+    "rdct": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
@@ -55,43 +55,43 @@
         }
       }
     },
-    "mrchTyp": {
+    "teep": {
       "type": "string"
     },
-    "acqRef": {
+    "rf": {
       "type": "string"
     },
-    "isoMrchRef": {
+    "irf": {
       "type": "string"
     },
-    "acqProcRef": {
+    "apr": {
       "type": "string"
     },
-    "busTyp": {
+    "typ": {
       "type": "string"
     },
-    "statChngDt": {
+    "sdt": {
       "type": "string"
     },
-    "rltnOpenDt": {
+    "ropd": {
       "type": "string"
     },
     "rltnClseDt": {
       "type": "string"
     },
-    "regDt": {
+    "rdtt": {
       "type": "string"
     },
     "stbDt": {
       "type": "string"
     },
-    "avgTcktVal": {
+    "ticky": {
       "type": "string"
     },
-    "trmnlDwnIdCde": {
+    "tdicd": {
       "type": "string"
     },
-    "brdProfUpdDt": {
+    "bupd": {
       "type": "string"
     },
     "contactDetails": {
@@ -100,26 +100,26 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "teleAddress": {
+          "tel": {
             "type": "array",
             "items": {
               "type": "object",
               "additionalProperties": false,
               "properties": {
-                "teleNbr": {
+                "no": {
                   "type": "string"
                 }
               }
             }
           },
-          "postalAddress": {
+          "paddr": {
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "postalAddressLine1": {
+              "lin1": {
                 "type": "string"
               },
-              "postalAddressLine2": {
+              "paddrLine2": {
                 "type": "string"
               },
               "city": {
@@ -164,14 +164,14 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-              "postalAddress": {
+              "paddr": {
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
-                  "postalAddressLine1": {
+                  "lin1": {
                     "type": "string"
                   },
-                  "postalAddressLine2": {
+                  "paddrLine2": {
                     "type": "string"
                   },
                   "city": {
@@ -190,7 +190,7 @@
               }
             }
           },
-          "busContactType": {
+          "bust": {
             "type": "string"
           }
         }
@@ -218,6 +218,6 @@
   "required": [
     "myId",
     "brb",
-    "acqRef"
+    "rf"
   ]
 }

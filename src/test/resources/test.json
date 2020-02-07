@@ -1,0 +1,14 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "Photos": {
+        "*": {
+          "Id": "[&1].as",
+          "Caption": "[&1].sd",
+          "Url": "[&1].df"
+        }
+      }
+    }
+  }
+]

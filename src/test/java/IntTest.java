@@ -45,8 +45,10 @@ public class IntTest {
     @Test
     public void asdf(){
 
-        String goat = "{\"Photos\":[{\"Id\":\"327703\",\"Caption\":\"TEST>>photo1\",\"Url\":\"http://bob.com/0001/327703/photo.jpg\"},{\"Id\":\"327704\",\"Caption\":\"TEST>>photo2\",\"Url\":\"http://bob.com/0001/327704/photo.jpg\"}]}";
+       // String goat = "{\"Photos\":[{\"Id\":\"327703\",\"Caption\":\"TEST>>photo1\",\"Url\":\"http://bob.com/0001/327703/photo.jpg\"},{\"Id\":\"327704\",\"Caption\":\"TEST>>photo2\",\"Url\":\"http://bob.com/0001/327704/photo.jpg\"}]}";
 
+
+        String goat = "[{\"Id\":\"327703\",\"Caption\":\"TEST>>photo1\",\"Url\":\"http://bob.com/0001/327703/photo.jpg\"},{\"Id\":\"327704\",\"Caption\":\"TEST>>photo2\",\"Url\":\"http://bob.com/0001/327704/photo.jpg\"}]";
         Object dsfg = jsonToObject(goat);
 
         Object transform = transformSpecification.transform(dsfg);

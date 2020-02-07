@@ -28,6 +28,10 @@ repositories {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+configurations {
+    all*.exclude group: 'com.vaadin.external.google', module: 'android-json'
+}
+
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-batch:2.1.1.RELEASE")
     compile group: 'com.bazaarvoice.jolt', name: 'jolt-core', version: '0.1.0'

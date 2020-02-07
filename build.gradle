@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.3.RELEASE")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.8.RELEASE")
     }
 }
 
@@ -29,10 +29,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-batch")
-    //compile group: 'org.springframework', name: 'spring-core', version: '5.0.8.RELEASE'
-
-
+    compile("org.springframework.boot:spring-boot-starter-batch:2.1.1.RELEASE")
     compile group: 'com.bazaarvoice.jolt', name: 'jolt-core', version: '0.1.0'
     compile group: 'com.bazaarvoice.jolt', name: 'json-utils', version: '0.1.0'
     compile group: 'com.google.guava', name: 'guava', version: '21.0'
@@ -41,7 +38,7 @@ dependencies {
     compile group: 'org.json', name: 'json', version: '20160810'
     compile group: 'com.github.fge', name: 'json-schema-validator', version: '2.2.6'
     compile group: 'commons-validator', name: 'commons-validator', version: '1.6'
-
-    testCompile("junit:junit")
+    runtime("com.h2database:h2:1.4.197")
+    //compile "org.springframework.boot:spring-boot-starter-data-jpa:2.1.1.RELEASE"
 }
 
